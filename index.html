@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ショップECサイト</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<header class="site-header">
+    <div class="header-container">
+        <!-- ロゴ -->
+        <div class="logo">
+			<h1 href="#">家電通販</h1>
+        </div>
+        
+        <!-- ナビゲーションメニュー -->
+        <nav class="nav-links">
+            <a href="#">ホーム</a>
+            <a href="#">商品一覧</a>
+            <a href="#">特集</a>
+            <a href="#">お問い合わせ</a>
+        </nav>
+        
+        <!-- カート・ログイン -->
+        <div class="header-icons">
+            <a href="#">カート</a>
+            <a href="#">ログイン</a>
+        </div>
+    </div>
+</header>
+<body>
+
+	<!-- 検索窓・フィルター -->
+	<div class="filters__wrap">
+		<div class="filters">
+			<div class="sort__wrap">
+				<input type="text" id="search" placeholder="商品名で検索">
+				<select id="sort">
+					<option value="default">表示順</option>
+					<option value="price-asc">価格の安い順</option>
+					<option value="price-desc">価格の高い順</option>
+					<option value="popularity">人気順</option>
+				</select>
+				<div id="total-items">
+					<!-- 商品数の表示 -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 商品エリア -->
+	<div class="search-result__wrap">
+		<div class="search-result">
+			<div id="product-list" class="product-list">
+				<!-- 商品がこの中に挿入されます -->
+			</div>
+		</div>
+	</div>
+	<script src="./js/product.js"></script>
+</body>
+</html>
